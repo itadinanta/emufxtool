@@ -1,0 +1,7 @@
+.include "fxbus.as10k1"
+.include "special.as10k1"
+.include "inout.as10k1"
+.include "constants.as10k1"
+var private absolute _GPR[0x100] => 0x100;
+var private absolute _TRAMD[0x100] => 0x200;
+var private absolute _TRAMA[0x100] => 0x300;

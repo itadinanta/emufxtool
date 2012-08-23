@@ -1,0 +1,16 @@
+/*
+	$Id$
+ 	as10k1 standard include
+	CONST_* definitions
+*/
+.if (.undefined __CONST) {
+.define __CONST() {1}
+	var private absolute NULL => 0x040;
+	const MIN_NEG = 0x80000000;
+	const MAX_POS = 0x7fffffff;
+	const TABLE_NONE = 0;
+	const TABLE_100 = 1;
+	const TABLE_TREBLE = 2;
+	const TABLE_BASS = 3;
+	const TABLE_ONOFF = 4;
+}

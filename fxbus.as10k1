@@ -1,0 +1,20 @@
+/*
+	$Id$
+ 	as10k1 standard include
+	FXBUS_* definitions
+*/
+.if (.undefined __FXBUS) {
+.define __FXBUS() {1}
+	fxbus FXBUS_PCM_LEFT		=>	$000;
+	fxbus FXBUS_PCM_RIGHT		=>	$001;
+	fxbus FXBUS_PCM_LEFT_REAR	=>	$002;
+	fxbus FXBUS_PCM_RIGHT_REAR	=>	$003;
+	fxbus FXBUS_PCM_REAR_RIGHT	=>	$002;
+	fxbus FXBUS_PCM_REAR_LEFT	=>	$003;
+	fxbus FXBUS_MIDI_LEFT		=>	$004;
+	fxbus FXBUS_MIDI_RIGHT		=>	$005;
+	fxbus FXBUS_PCM_CENTER		=>	$006;
+	fxbus FXBUS_PCM_LFE		=>	$007;
+	fxbus FXBUS_MIDI_REVERB		=>	$00c;
+	fxbus FXBUS_MIDI_CHORUS		=>	$00d;
+}

@@ -1,0 +1,6 @@
+/* emu10k1 default includes */
+
+.include "fxbus.as10k1"
+.include "special.as10k1"
+.include "constants.as10k1"
+.include "inout.as10k1"

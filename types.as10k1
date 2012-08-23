@@ -1,0 +1,8 @@
+const TEST_V1 = 1E-3
+const TEST_V2 = #1.3E-2
+const TEST_V3 = &10
+const TEST_V4 = %10
+const TEST_V5 = -1
+const TEST_V6 = (TEST_V1 + TEST_V2)
+const TEST_V7 = 1
+const TEST_VV[] = {10,11,12,13,@1,%1,&1}

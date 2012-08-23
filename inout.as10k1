@@ -1,0 +1,41 @@
+/* input and output fixed addresses */
+
+
+.if (.undefined __INOUT) {
+.define __INOUT() {1}
+
+/* inputs */
+
+	extin EXTIN_AC97_L => 0x010;	/*  AC'97 capture channel - left */
+	extin EXTIN_AC97_R => 0x011;	/*  AC'97 capture channel - right */
+	extin EXTIN_SPDIF_CD_L => 0x012;	/*  internal S/PDIF CD - onboard - left */
+	extin EXTIN_SPDIF_CD_R => 0x013;	/*  internal S/PDIF CD - onboard - right */
+	extin EXTIN_ZOOM_L => 0x014;	/*  Zoom Video I2S - left */
+	extin EXTIN_ZOOM_R => 0x015;	/*  Zoom Video I2S - right */
+	extin EXTIN_TOSLINK_L => 0x016;	/*  LiveDrive - TOSLink Optical - left */
+	extin EXTIN_TOSLINK_R => 0x017;	/*  LiveDrive - TOSLink Optical - right */
+	extin EXTIN_LINE1_L => 0x018;	/*  LiveDrive - Line/Mic 1 - left */
+	extin EXTIN_LINE1_R => 0x019;	/*  LiveDrive - Line/Mic 1 - right */
+	extin EXTIN_COAX_SPDIF_L => 0x01a;	/*  LiveDrive - Coaxial S/PDIF - left */
+	extin EXTIN_COAX_SPDIF_R => 0x01b; 	/*  LiveDrive - Coaxial S/PDIF - right */
+	extin EXTIN_LINE2_L => 0x01c;	/*  LiveDrive - Line/Mic 2 - left */
+	extin EXTIN_LINE2_R => 0x01d;	/*  LiveDrive - Line/Mic 2 - right */
+
+/*  Outputs */
+
+	extout EXTOUT_AC97_L => 0x020;	/*  AC'97 playback channel - left */
+	extout EXTOUT_AC97_R => 0x021;	/*  AC'97 playback channel - right */
+	extout EXTOUT_TOSLINK_L => 0x022;	/*  LiveDrive - TOSLink Optical - left */
+	extout EXTOUT_TOSLINK_R => 0x023;	/*  LiveDrive - TOSLink Optical - right */
+	extout EXTOUT_CENTER => 0x024;	/*  SB Live 5.1 - center */
+	extout EXTOUT_LFE => 0x025; 	/*  SB Live 5.1 - LFE */
+	extout EXTOUT_HEADPHONE_L => 0x026;	/*  LiveDrive - Headphone - left */
+	extout EXTOUT_HEADPHONE_R => 0x027;	/*  LiveDrive - Headphone - right */
+	extout EXTOUT_REAR_L => 0x028;	/*  Rear channel - left */
+	extout EXTOUT_REAR_R => 0x029;	/*  Rear channel - right */
+	extout EXTOUT_ADC_CAP_L => 0x02a;	/*  ADC Capture buffer - left */
+	extout EXTOUT_ADC_CAP_R => 0x02b;	/*  ADC Capture buffer - right */
+	extout EXTOUT_MIC_CAP => 0x02c;	/*  MIC Capture buffer */
+	extout EXTOUT_ACENTER => 0x031; 	/*  Analog Center */
+	extout EXTOUT_ALFE => 0x032; 	/*  Analog LFE */
+}

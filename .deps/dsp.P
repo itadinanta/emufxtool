@@ -1,0 +1,5 @@
+dsp.o: dsp.C dsp.h config.h asmdefs.h
+dsp.C :
+dsp.h :
+config.h :
+asmdefs.h :

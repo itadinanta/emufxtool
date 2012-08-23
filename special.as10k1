@@ -1,0 +1,22 @@
+/* Special register addresses */
+.if (.undefined __SPECIAL) {
+.define __SPECIAL() {1}
+ var absolute ACCUM => 0x056;
+ var absolute CCR => 0x057; 
+ var absolute NOISE1 => 0x058;
+ var absolute NOISE2 => 0x059; 
+ var absolute IRQ => 0x05A; 
+ var absolute NOISE => 0x058;
+ var absolute NOISE4096 => 0x059; 
+ var absolute IRQREG => 0x05A; 
+ var absolute DBAC => 0x05B;
+
+/* constants for CCR */
+
+ const CC_NORMALIZED = .eval (1<<0);
+ const CC_BORROW = .eval (1<<1);
+ const CC_MINUS = .eval (1<<2);
+ const CC_ZERO = .eval (1<<3);
+ const CC_SATURATE = .eval (1<<4);
+ const CC_NONZERO = .eval (1<<8);
+}
